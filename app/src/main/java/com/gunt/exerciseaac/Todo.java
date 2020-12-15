@@ -1,10 +1,13 @@
-package com.gunt.exerciseaac.data.domain;
+package com.gunt.exerciseaac;
 
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import lombok.Data;
+
+@Data
 @Entity
 public class Todo {
     @PrimaryKey(autoGenerate = true)

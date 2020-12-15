@@ -1,16 +1,12 @@
-package com.gunt.exerciseaac.ui;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
+package com.gunt.exerciseaac;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.gunt.exerciseaac.data.AppDatabase;
-import com.gunt.exerciseaac.R;
-import com.gunt.exerciseaac.data.domain.Todo;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 public class MainActivity extends AppCompatActivity {
 
