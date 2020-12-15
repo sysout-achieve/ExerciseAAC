@@ -1,4 +1,4 @@
-package com.gunt.exerciseaac;
+package com.gunt.exerciseaac.data.domain;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
