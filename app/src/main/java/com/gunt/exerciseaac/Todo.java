@@ -1,10 +1,7 @@
 package com.gunt.exerciseaac;
 
-
-import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-
 import lombok.Data;
 
 @Data
@@ -18,7 +15,6 @@ public class Todo {
         this.title = title;
     }
 
-    @NonNull
     @Override
     public String toString() {
         StringBuffer sb = new StringBuffer("TODO {");

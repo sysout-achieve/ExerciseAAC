@@ -1,5 +1,6 @@
 package com.gunt.exerciseaac;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -11,7 +12,7 @@ import java.util.List;
 @Dao
 public interface TodoDAO {
     @Query("SELECT * FROM Todo")
-    List<Todo> getAll();
+    LiveData<List<Todo>> getAll();
 
     @Insert
     void insertAll(Todo... todos);

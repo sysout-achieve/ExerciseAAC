@@ -1,7 +1,6 @@
 package com.gunt.exerciseaac;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -26,20 +25,11 @@ public class MainActivity extends AppCompatActivity {
                 .allowMainThreadQueries()
                 .build();
 
-        printTodoList();
+        db.todoDAO().getAll().observe(this, todos -> txt_list.setText(todos.toString()));
 
-        findViewById(R.id.btn_input).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                db.todoDAO().insert(new Todo(et_todo.getText().toString()));
-                printTodoList();
-            }
+        findViewById(R.id.btn_input).setOnClickListener(v -> {
+            db.todoDAO().insert(new Todo(et_todo.getText().toString()));
         });
 
     }
-
-    private void printTodoList(){
-        txt_list.setText(db.todoDAO().getAll().toString());
-    }
-
 }
