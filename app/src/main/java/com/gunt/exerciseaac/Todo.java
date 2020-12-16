@@ -19,8 +19,8 @@ public class Todo {
     public String toString() {
         StringBuffer sb = new StringBuffer("TODO {");
         sb.append("id=").append(id);
-        sb.append(", title= ").append(title).append("\n");
+        sb.append(", title= ").append(title).append("");
         sb.append("}");
-        return super.toString();
+        return sb.toString();
     }
 }
