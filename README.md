@@ -12,7 +12,9 @@ AAC 연습프로젝트(java)
 ## Room
 
 SQLite에 대한 추상화 레이어를 제공 데이터베이스 액세스 지원 및 SQLite 활용<br>
-![https://developer.android.com/training/data-storage/room](https://developer.android.com/images/training/data-storage/room_architecture.png)
+<br>
+![https://developer.android.com/training/data-storage/room](https://developer.android.com/images/training/data-storage/room_architecture.png) 
+<br>
 *룸 아키텍쳐 다이어그램*
 <br><br>
 - 앱이 단일프로세스에서 실행될 경우 AppDatabase 객체를 인스턴스화할 때 싱글톤 디자인 패턴을 따라야 함.(각 RoomDatabase 인스턴스는 리소스를 많이 소비함)<br>
